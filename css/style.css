@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+:root {
+    --cor-prim: #3C73EB;
+    --cor-sec: #2CD4C6;
+    --cor-ter: #34F648;
+    --cor-qua: #792CD4;
+    --cor-qua-hover: #4f1c88;
+    --cor-qui: #F6C2DF;
+}
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#logo {
+    display: block;
+    width: 150px;
+    height: 120px;
+    background: url(../img/logo-removebg-preview.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.colored-toast.swal2-icon-success {
+    background-color: #a5dc86 !important;
+}
+  
+.colored-toast.swal2-icon-error {
+background-color: #f27474 !important;
+}

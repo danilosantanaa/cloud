@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+:root {
+    --cor-prim: #3C73EB;
+    --cor-sec: #2CD4C6;
+    --cor-ter: #34F648;
+    --cor-qua: #792CD4;
+    --cor-qua-hover: #4f1c88;
+    --cor-qui: #F6C2DF;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body, html {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-prim);
+}
+
+div > * {
+    background: white;
+}
+
+div {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px rgba(0,0,0,.6);
+}
+
+
+div > form > div {
+    box-shadow: none;
+}
+
+
+form > div > label {
+    display: none;
+}
+
+form  input {
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,.6);
+}
+
+form > div:nth-child(1) {
+    margin-bottom: -4px;
+}
+
+form > div#user-logo {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgba(0,0,0,.6);
+    margin: auto auto 10px auto;
+    border-radius: 50%;
+    background: url(../img/user-logo.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+form > div.login-erro {
+    color: red;
+}
+
+form  div.login-erro i.fa-solid {
+    background: white;
+}
+
+form > div > input[type="text"] {
+    border-radius: 10px 10px 0px 0px;
+    margin: auto;
+    margin-bottom: -12px;
+    border-bottom: none;
+}
+
+form > div > input[type="password"] {
+    border-radius: 0px 0px 10px 10px;
+    margin: auto;
+    margin-top: -11px;
+}
+
+form > div > input[type="submit"] {
+    margin: auto;
+    margin-top: -10px;
+    width: 100%;
+    background-color: var(--cor-qua);
+    color: white;
+    border: none;
+}
+
+form > div > input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: var(--cor-qua-hover);
+}
+
+/* Animações */
+
+
+@keyframes Login-In {
+    100% {
+        transform: rotate(360deg);
+    }
+
+    0% {
+        transform: rotate(0deg);
+    }
+}
